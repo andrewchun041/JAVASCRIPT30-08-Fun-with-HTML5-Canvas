@@ -6,6 +6,15 @@ ctx.strokeStyle = '#BADA55';
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 ctx.lineWidth = 100;
+ctx.globalCompositeOperation = 'source-over'; //default
+// ctx.globalCompositeOperation = 'multiply';
+// ctx.globalCompositeOperation = 'source-out';
+// ctx.globalCompositeOperation = 'source-stop';
+// ctx.globalCompositeOperation = 'destination-over'; // draws behind existing draw
+// ctx.globalCompositeOperation = 'lighter'; // add color values on canvas
+// ctx.globalCompositeOperation = 'copy'; // copy existing canvas
+// ctx.globalCompositeOperation = 'xor'; // draw on overlap
+
 
 let isDrawing = false;
 let lastX = 0;
